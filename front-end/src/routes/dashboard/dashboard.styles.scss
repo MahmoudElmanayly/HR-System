@@ -1,0 +1,52 @@
+.users-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+
+  .users-title {
+    font-size: 2.2rem;
+    color: #0066ff;
+    font-weight: 500;
+  }
+
+  .search-and-add-users {
+    display: flex;
+    column-gap: 1.7rem;
+
+    .users-search-bar {
+      width: 60%;
+    }
+
+    .users-add-button {
+      font-size: 2rem;
+      button {
+        height: 100%;
+        cursor: pointer;
+        font-weight: 500;
+        background-color: #0066ff;
+        color: #eee;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0rem 1rem;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        span {
+          font-weight: 700;
+          font-size: 1.5rem;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .users-table {
+    background-color: white;
+    border-radius: 1rem;
+    flex-grow: 1;
+    font-size: 3rem;
+  }
+}

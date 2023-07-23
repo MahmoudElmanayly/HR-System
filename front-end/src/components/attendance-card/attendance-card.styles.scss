@@ -1,0 +1,28 @@
+.card {
+  border-radius: 0.6rem;
+  box-shadow: 0 0 5px 2px rgba(212, 212, 212, 0.701);
+
+  .calendar-header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-size: 1.5rem;
+    }
+
+    button {
+      &:hover {
+        transform: scale(1.01);
+      }
+      font-size: 1.3rem;
+      cursor: pointer;
+      padding: 0.5rem;
+      color: white;
+      background-color: blue;
+      border: none;
+      border-radius: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.sidebar-button-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  color: #6c757d;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    color: #0066ff;
+  }
+
+  .sidebar-button-icon {
+    font-size: 3.2rem;
+  }
+
+  .sidebar-button-text {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,27 @@
+.users-table {
+  display: flex;
+  flex-direction: column;
+
+  .table-title {
+    padding: 1.3rem;
+  }
+
+  .table-header {
+    background-color: #f3f7ff;
+    font-size: 2.5rem;
+    padding: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 0.5rem;
+
+    .action-header {
+      justify-self: end;
+    }
+  }
+
+  .table-rows-container {
+    padding: 0 1.3rem 1.3rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
