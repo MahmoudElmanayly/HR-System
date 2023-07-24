@@ -44,7 +44,7 @@ const UpdateUser = () => {
     const group = formElement?.current?.["group"].value;
 
     await axios.put(
-      `https://hr-system-api.onrender.com/api/v1/employees/${state._id}`,
+      `https://hr-system-api-wb2y.onrender.com/api/v1/employees/${state._id}`,
       {
         firstname,
         lastname,

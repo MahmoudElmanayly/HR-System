@@ -1,5 +1,4 @@
 import { ReactNode, createContext, useState } from "react";
-import axios from "axios";
 
 type Employee = {
   _id: string;
