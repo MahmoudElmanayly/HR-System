@@ -9,6 +9,11 @@
 - go to the **front-end** folder
    - install dependencies ```npm install```
    - run ```npm run start```
+ 
+## Notes
+   Login credentials:
+   - Email: elmanaylym@gmail.com
+   - Password: test123 
 
 ## Images
 ![hr-system](https://github.com/MahmoudElmanayly/HR-System/assets/38159183/4860db96-99e1-4269-b706-f10aa6538a74)
