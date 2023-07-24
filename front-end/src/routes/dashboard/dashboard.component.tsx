@@ -16,6 +16,10 @@ const Dashboard = () => {
   }, []);
 
   const openAddUserPopupHandler = () => {
+    const token = localStorage.getItem("jwt");
+    if (!token) {
+      return alert("You should login first");
+    }
     toggleVisibility();
   };
 

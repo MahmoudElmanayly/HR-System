@@ -24,10 +24,8 @@ type Employee = {
 const Header = () => {
   let token = localStorage.getItem("jwt") as string;
   const { addUser, deleteUser } = useContext(LoginContext);
-  console.log("The token : ", token);
-  if (!token) token = "no token";
 
-  console.log("The token 22 : ", token);
+  if (!token) token = "no token";
 
   const { decodedToken } = useJwt(token);
   const user = decodedToken as Employee;
