@@ -35,7 +35,7 @@ const AttendanceCard = ({ employee }: IAttendanceProps) => {
     try {
       const newAttendance = attendance.current;
       await axios.put(
-        `http://localhost:8080/api/v1/employees/${employee._id}`,
+        `https://hr-system-api.onrender.com/api/v1/employees/${employee._id}`,
         {
           attendance: newAttendance,
         },

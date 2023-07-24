@@ -37,12 +37,15 @@ export const EmployeesProvider = ({ children }: EmloyeesProviderProps) => {
 
   const setAllEmployees = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/api/v1/employees", {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-          "Content-Type": "application/json",
-        },
-      });
+      const res = await axios.get(
+        "https://hr-system-api.onrender.com/api/v1/employees",
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       const arrOfEmps = res.data.data;
 

@@ -36,7 +36,7 @@ const TableRow = ({ employee }: TableRowProps) => {
   const deleteEmployeeHandler = async () => {
     try {
       await axios.delete(
-        `http://localhost:8080/api/v1/employees/${employee._id}`,
+        `https://hr-system-api.onrender.com/api/v1/employees/${employee._id}`,
         {
           headers: {
             "jwt-token": localStorage.getItem("jwt"),

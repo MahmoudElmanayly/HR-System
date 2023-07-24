@@ -28,7 +28,7 @@ const AddUser = () => {
     const group = formElement?.current?.["group"].value;
 
     await axios.post(
-      "http://localhost:8080/api/v1/employees",
+      "https://hr-system-api.onrender.com/api/v1/employees",
       {
         firstname,
         lastname,
