@@ -22,8 +22,13 @@ type Employee = {
 };
 
 const Header = () => {
-  const token = localStorage.getItem("jwt") as string;
+  let token = localStorage.getItem("jwt") as string;
   const { addUser, deleteUser } = useContext(LoginContext);
+  console.log("The token : ", token);
+  if (!token) token = "no token";
+
+  console.log("The token 22 : ", token);
+
   const { decodedToken } = useJwt(token);
   const user = decodedToken as Employee;
 
@@ -32,7 +37,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (token) {
+    if (token != "no token") {
       addUser({ token, user });
     }
   }, []);
